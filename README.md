@@ -1,9 +1,10 @@
+#What is this#
 Skeleton code for Game Boy ROM development (for Linux or Mac OS X).
 
-*Requirements*
+#Requirements#
 make, [RGBDS compiler](https://github.com/bentley/rgbds)
 
-*Acknowledgements*
+#Acknowledgements#
 GBHW, MEMEORY - Gameboy Hardware definitions for GALP by GABY. Inspired from work done by Carsten Sorensen & others.
 
 
