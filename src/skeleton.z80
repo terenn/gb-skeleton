@@ -1,0 +1,48 @@
+INCLUDE "inc/entry.z80"
+
+jp init
+
+SECTION "Vblank",HOME[$0040]
+  jp interrupt_vblank
+SECTION "LCDC",HOME[$0048]
+  jp interrupt_lcdc
+SECTION "Timer_Overflow",HOME[$0050]
+  jp interrupt_timer
+SECTION "Serial",HOME[$0058]
+  jp interrupt_serial
+SECTION "p1thru4",HOME[$0060]
+  jp interrupt_input
+
+SECTION "main",HOME[$015A]
+
+init:
+  ; TODO: setup code (screen, interrupts, memory, etc)
+
+main_loop:
+  halt
+  nop
+
+  ; TODO: main loop
+
+  jr main_loop
+
+
+interrupt_vblank:
+  ; TODO: interrupt handler
+  reti
+  
+interrupt_lcdc
+  ; TODO: interrupt handler
+  reti
+  
+interrupt_timer
+  ; TODO: interrupt handler
+  reti
+  
+interrupt_serial
+  ; TODO: interrupt handler
+  reti
+
+interrupt_input
+  ; TODO: interrupt handler
+  reti
